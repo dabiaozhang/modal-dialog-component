@@ -9,3 +9,24 @@ a modal_dialog by vanilla javascript
 
 
 - params:
+```
+text: "i am alertDialog",
+          confirmButton: {
+                    className: "confirm-button",
+                    buttonText: "确定",
+                    clickCallback: () => {
+                        alert("confirm");
+                    }
+                },
+                cancelButton: {
+                    className: "cancel-button",
+                    buttonText: "取消",
+                    clickCallback: () => {
+                        alert("cancel");
+                    }
+                },                
+                onClose: () => {
+                    alert("close");
+                }
+            }
+            ```
