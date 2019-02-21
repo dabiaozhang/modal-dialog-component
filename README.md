@@ -10,25 +10,25 @@ a modal_dialog by vanilla javascript
 
 ## params:
 ```
-text: "i am alertDialog",
-          confirmButton: {
-                    className: "confirm-button",
-                    buttonText: "确定",
-                    clickCallback: () => {
-                        alert("confirm");
-                    }
-                },
-                cancelButton: {
-                    className: "cancel-button",
-                    buttonText: "取消",
-                    clickCallback: () => {
-                        alert("cancel");
-                    }
-                },                
-                onClose: () => {
-                    alert("close");
-                }
-            }
+text: "custom text"
+confirmButton: {
+    className: "confirm button class name",
+    buttonText: "confirm button inner text",
+    clickCallback: () => {
+          alert("confirm event");
+        }
+    },
+    cancelButton: {
+         className: "cancel button class name",
+         buttonText: "cancel button inner text",
+         clickCallback: () => {
+            alert("cancel event");
+         }
+    },                
+    onClose: () => {
+       alert("close event");
+    }
+}
  ```
  
 ## more detail:
