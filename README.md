@@ -30,3 +30,5 @@ text: "i am alertDialog",
                 }
             }
             ```
+## more detail:
+see demo.html
