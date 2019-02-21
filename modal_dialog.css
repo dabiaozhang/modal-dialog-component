@@ -1,0 +1,44 @@
+.overlay {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    left: 0;
+    top: 0;    
+    background-color: rgba(0, 0, 0, 0.5);
+    height:100%;
+    width:100%;
+}
+.dialog {
+    border-radius: 4px;
+    width: 400px;
+    background: #ffffff;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+}
+.confirm-button {
+    white-space: nowrap;
+    cursor: pointer;
+    color: #fff;
+    background: #fff;
+    border: 1px solid #dcdfe6;
+    border-color: #dcdfe6;
+    text-align: center;
+    box-sizing: border-box;
+    font-weight: 500;
+    padding: 12px 20px;
+    font-size: 14px;
+    border-radius: 4px;  
+    background-color: #409EFF;
+    border-color: #409EFF;   
+    margin: 0 10px 0 0;   
+}
+
+.dialog-text {
+    padding: 30px 20px;
+    color: #606266;
+    font-size: 14px;    
+}
+.button-contain {
+    text-align: right;
+    padding: 12px 20px;
+}
