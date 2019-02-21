@@ -29,6 +29,7 @@ text: "i am alertDialog",
                     alert("close");
                 }
             }
-            ```
+ ```
+ 
 ## more detail:
 see demo.html
