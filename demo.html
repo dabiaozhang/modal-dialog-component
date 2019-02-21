@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+    <script src="./modal_dialog.js"></script>
+    <link rel="stylesheet" href="./modal_dialog.css">
+</head>
+<body>
+    <div>
+        <button class="show-dialog" onclick="showDialog()">show dialog btn</button>
+        <button class="show-dialog" onclick="showAlertDialog()">show alert dialog btn</button>
+        <button class="show-dialog" onclick="showConfirmDialog()">show confirm dialog btn</button>
+    </div>
+    
+    <script>
+        function showDialog() {
+            let modalDialog = new dialog({
+                text: "i am modalDialog",
+                onClose: () => {
+                    alert("close");
+                }
+            });
+            modalDialog.show();
+        }  
+        function showAlertDialog() {
+            let alertModalDialog = new alertDialog({
+                text: "i am alertDialog",
+                confirmButton: {
+                    className: "confirm-button",
+                    buttonText: "确定",
+                    clickCallback: () => {
+                        alert("confirm");
+                    }
+                },
+                onClose: () => {
+                    alert("close");
+                }
+            });
+            alertModalDialog.show();
+        }
+        function showConfirmDialog() {
+            let confirmModalDialog = new confirmDialog({
+                text: "i am alertDialog",
+                confirmButton: {
+                    className: "confirm-button",
+                    buttonText: "确定",
+                    clickCallback: () => {
+                        alert("confirm");
+                    }
+                },
+                cancelButton: {
+                    className: "cancel-button",
+                    buttonText: "取消",
+                    clickCallback: () => {
+                        alert("cancel");
+                    }
+                },                
+                onClose: () => {
+                    alert("close");
+                }
+            })
+            confirmModalDialog.show();
+        }
+    </script>
+    <style>
+        .show-dialog {
+            width: 400px;
+            height: 100px;
+            font-size: 20px;
+            margin: 0 20px 0 0 ;
+        }
+        .cancel-button {
+            white-space: nowrap;
+            cursor: pointer;
+            color: ##606266;
+            background: #fff;
+            border: 1px solid #dcdfe6;
+            border-color: #dcdfe6;
+            text-align: center;
+            box-sizing: border-box;
+            font-weight: 500;
+            padding: 12px 20px;
+            font-size: 14px;
+            border-radius: 4px;  
+            background-color: #ffffff;
+            border-color: #ffffff;   
+            margin: 0 10px 0 0;   
+        }
+    </style>
+
+</body>
+</html>
+
+
+
