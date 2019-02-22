@@ -11,13 +11,14 @@ a modal_dialog by vanilla javascript
 ## params:
 ```
 text: "custom text"
-confirmButton: {
-    className: "confirm button class name",
-    buttonText: "confirm button inner text",
-    clickCallback: () => {
-          alert("confirm event");
-        }
-    },
+{
+    confirmButton: {
+        className: "confirm button class name",
+        buttonText: "confirm button inner text",
+        clickCallback: () => {
+              alert("confirm event");
+            }
+        },
     cancelButton: {
          className: "cancel button class name",
          buttonText: "cancel button inner text",
